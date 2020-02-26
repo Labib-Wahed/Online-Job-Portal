@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(exSession({secret: 'my top secret value', saveUninitialized: true, resave: false}));
 app.use(cookieParser());
 app.use('/login', login);
+app.use('/registration', registration);
 app.use('/logout', logout);
 app.use('/home', home);
 
