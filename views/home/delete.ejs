@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete page</title>
+</head>
+<body>
+	<div>
+		<h1>Delete User!</h1> 		
+	</div>
+
+	<a href="/home/alluser"> Back to List</a> |
+	<a href="/logout"> logout</a><br>
+
+	<form method="post">
+		<table>
+			<tr>
+				<td>eid</td>
+				<td><%=user.eid%></td>
+			</tr>
+			<tr>
+				<td>employeeName</td>
+				<td><%=user.employeeName%></td>
+			</tr>
+			<tr>
+				<td>companyName</td>
+				<td><%=user.companyName%></td>
+			</tr>
+			<tr>
+				<td>contractNo</td>
+				<td><%=user.contractNo%></td>
+			</tr>
+			<tr>
+				<td>userName</td>
+				<td><%=user.userName%></td>
+			</tr>
+			<tr>
+				<td>Password :</td>
+				<td><%=user.password%></td>
+			</tr>
+			
+			<tr>
+				<td><h3>Are you sure? </h3></td>
+				<td><input type="submit" name="submit" value="confirm"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
